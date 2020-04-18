@@ -88,6 +88,22 @@
                 <artifactId>maven-jar-plugin</artifactId>
                 <version>3.1.2</version>
             </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-source-plugin</artifactId>
+                <configuration>
+                    <attach>true</attach>
+                </configuration>
+                <executions>
+                    <execution>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>jar</goal>
+                        </goals>
+                    </execution>
+                </executions>
+                <version>3.2.0</version>
+            </plugin>
         </plugins>
     </build>
 
